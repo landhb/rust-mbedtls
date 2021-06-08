@@ -101,6 +101,7 @@ impl BuildConfig {
             cflags.push("-fno-builtin".into());
             cflags.push("-D_FORTIFY_SOURCE=0".into());
             cflags.push("-fno-stack-protector".into());
+            cflags.push("-std=c99".into());
         }
 
         BuildConfig {
