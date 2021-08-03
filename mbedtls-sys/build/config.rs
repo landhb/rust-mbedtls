@@ -287,7 +287,7 @@ const DEFAULT_DEFINES: &'static [CDefine] = &[
     ("MBEDTLS_ECJPAKE_C",                                 Defined),
     ("MBEDTLS_ECP_C",                                     Defined),
     ("MBEDTLS_ENTROPY_C",                                 Undefined),
-    ("MBEDTLS_ERROR_C",                                   Defined),
+    ("MBEDTLS_ERROR_C",                                   Undefined),
     ("MBEDTLS_GCM_C",                                     Defined),
     ("MBEDTLS_HAVEGE_C",                                  Undefined),
     ("MBEDTLS_HKDF_C",                                    Defined),
