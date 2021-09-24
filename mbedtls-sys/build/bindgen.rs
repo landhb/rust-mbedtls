@@ -110,7 +110,9 @@ impl super::BuildConfig {
                         .strip_suffix("\r\n")
                         .or(path.strip_suffix("\n"))
                         .unwrap_or(&path);
-                    cc.flag(&format!("--sysroot={}", trimmed_path));
+                    if trimmed_path != "/" {
+                        cc.flag(&format!("--sysroot={}", trimmed_path));
+                    }
                 }
                 _ => {} // skip toolchains without a configured sysroot
             };
