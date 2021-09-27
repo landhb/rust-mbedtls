@@ -422,7 +422,7 @@ pub const FEATURE_DEFINES: &'static [(&'static str, CDefine)] = &[
     ("threading",             ("MBEDTLS_THREADING_C",                       Defined)),
     ("pkcs11",                ("MBEDTLS_PKCS11_C",                          Defined)),
     ("zlib",                  ("MBEDTLS_ZLIB_SUPPORT",                      Defined)),
-    ("debug",                 ("MBEDTLS_DEBUG_C",                           Defined)),
+    ("debug",                 ("MBEDTLS_DEBUG_C",                           Undefined)),
     ("custom_printf",         ("MBEDTLS_PLATFORM_C",                        Defined)),
     ("custom_printf",         ("MBEDTLS_PLATFORM_PRINTF_MACRO",             DefinedAs("mbedtls_printf"))),
     ("aesni",                 ("MBEDTLS_AESNI_C",                           Defined)),
