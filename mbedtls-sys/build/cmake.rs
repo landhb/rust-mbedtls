@@ -17,7 +17,6 @@ impl super::BuildConfig {
         ))
         .define("ENABLE_PROGRAMS", "OFF")
         .define("ENABLE_TESTING", "OFF")
-        .define("CMAKE_BUILD_TYPE", "Release")
         .build_target("lib");
         for cflag in &self.cflags {
             cmk.cflag(cflag);
